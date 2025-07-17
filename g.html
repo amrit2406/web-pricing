@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services & Pricing</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text color */
+        }
+        .card-gradient-1 {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6); /* Indigo to Violet */
+        }
+        .card-gradient-2 {
+            background: linear-gradient(135deg, #ef4444, #f97316); /* Red to Orange */
+        }
+        .card-gradient-3 {
+            background: linear-gradient(135deg, #22c55e, #10b981); /* Green to Emerald */
+        }
+        .card-gradient-4 {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6); /* Cyan to Blue */
+        }
+        .card-gradient-5 {
+            background: linear-gradient(135deg, #a855f7, #ec4899); /* Purple to Pink */
+        }
+        .card-gradient-6 {
+            background: linear-gradient(135deg, #f59e0b, #fbbf24); /* Amber to Yellow */
+        }
+        .price-tag {
+            font-size: 2.5rem; /* Larger price font */
+            font-weight: 700;
+            line-height: 1;
+        }
+        .price-currency {
+            font-size: 1.25rem;
+            vertical-align: super;
+            margin-right: 0.25rem;
+        }
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .feature-list li i {
+            margin-right: 0.75rem;
+            color: #34d399; /* Green checkmark */
+        }
+        .choose-button {
+            transition: all 0.3s ease;
+        }
+        .choose-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2d3748; /* Darker track */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568; /* Grey thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #718096; /* Lighter grey on hover */
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 sm:p-8">
+
+    <header class="text-center mb-16 mt-8">
+        <h1 class="text-5xl sm:text-6xl font-extrabold text-white mb-4 leading-tight">
+            Our <span class="text-indigo-400">Services</span> & <span class="text-purple-400">Pricing</span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-400 max-w-3xl mx-auto">
+            Discover the perfect solution for your digital needs, from basic setups to advanced custom development.
+        </p>
+    </header>
+
+    <main class="max-w-7xl mx-auto space-y-20">
+
+        <!-- Service Section: Landing Page -->
+        <section id="landing-page" class="mb-16">
+            <h2 class="text-4xl sm:text-5xl font-bold text-center text-white mb-12">
+                <span class="text-yellow-400">Landing Page</span> Development
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Card -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 flex flex-col transform hover:scale-105 transition-transform duration-300 border-t-4 border-indigo-500">
+                    <h3 class="text-3xl font-bold text-indigo-400 mb-4">Basic</h3>
+                    <p class="text-gray-400 mb-6">Get started with a simple yet effective online presence.</p>
+                    <div class="flex items-baseline mb-8">
+                        <span class="price-currency">₹</span>
+                        <span class="price-tag text-white">5,000</span>
+                        <span class="text-gray-400 ml-2">/ one-time</span>
+                    </div>
+                    <ul class="feature-list text-gray-300 flex-grow mb-8">
+                        <li><i class="fas fa-check-circle"></i> Single Page Design</li>
+                        <li><i class="fas fa-check-circle"></i> Responsive Layout</li>
+                        <li><i class="fas fa-check-circle"></i> Basic SEO Setup</li>
+                        <li><i class="fas fa-check-circle"></i> 1 Revision Cycle</li>
+                    </ul>
+                    <button class="choose-button bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md">
+                        Choose Basic Plan
+                    </button>
+                </div>
+
+                <!-- Standard Card -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 flex flex-col transform hover:scale-105 transition-transform duration-300 border-t-4 border-purple-500">
+                    <h3 class="text-3xl font-bold text-purple-400 mb-4">Standard</h3>
+                    <p class="text-gray-400 mb-6">Enhance your landing page with essential interactive features.</p>
+                    <div class="flex items-baseline mb-8">
+                        <span class="price-currency">₹</span>
+                        <span class="price-tag text-white">10,000</span>
+                        <span class="text-gray-400 ml-2">/ one-time</span>
+                    </div>
+                    <ul class="feature-list text-gray-300 flex-grow mb-8">
+                        <li><i class="fas fa-check-circle"></i> All Basic Features</li>
+                        <li><i class="fas fa-check-circle"></i> Contact Form Integration</li>
+                        <li><i class="fas fa-check-circle"></i> Social Media Links</li>
+                        <li><i class="fas fa-check-circle"></i> 3 Revision Cycles</li>
+                        <li><i class="fas fa-check-circle"></i> Google Analytics Setup</li>
+                    </ul>
+                    <button class="choose-button bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md">
+                        Choose Standard Plan
+                    </button>
+                </div>
+
+                <!-- Pro Card -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 flex flex-col transform hover:scale-105 transition-transform duration-300 border-t-4 border-pink-500">
+                    <h3 class="text-3xl font-bold text-pink-400 mb-4">Pro</h3>
+                    <p class="text-gray-400 mb-6">Unlock the full potential with advanced features and support.</p>
+                    <div class="flex items-baseline mb-8">
+                        <span class="price-currency">₹</span>
+                        <span class="price-tag text-white">18,000</span>
+                        <span class="text-gray-400 ml-2">/ one-time</span>
+                    </div>
+                    <ul class="feature-list text-gray-300 flex-grow mb-8">
+                        <li><i class="fas fa-check-circle"></i> All Standard Features</li>
+                        <li><i class="fas fa-check-circle"></i> Custom Animations</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced SEO Optimization</li>
+                        <li><i class="fas fa-check-circle"></i> CRM Integration</li>
+                        <li><i class="fas fa-check-circle"></i> Unlimited Revisions</li>
+                        <li><i class="fas fa-check-circle"></i> Priority Support</li>
+                    </ul>
+                    <button class="choose-button bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md">
+                        Choose Pro Plan
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section: Website Development -->
+        <section id="website-development" class="mb-16">
+            <h2 class="text-4xl sm:text-5xl font-bold text-center text-white mb-12">
+                <span class="text-green-400">Website</span> Development
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Card -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 flex flex-col transform hover:scale-105 transition-transform duration-300 border-t-4 border-green-500">
+                    <h3 class="text-3xl font-bold text-green-400 mb-4">Basic</h3>
+                    <p class="text-gray-400 mb-6">Launch your online presence with a foundational website.</p>
+                    <div class="flex items-baseline mb-8">
+                        <span class="price-currency">₹</span>
+                        <span class="price-tag text-white">25,000</span>
+                        <span class="text-gray-400 ml-2">/ one-time</span>
+                    </div>
+                    <ul class="feature-list text-gray-300 flex-grow mb-8">
+                        <li><i class="fas fa-check-circle"></i> Up to 5 Pages</li>
+                        <li><i class="fas fa-check-circle"></i> Fully Responsive</li>
+                        <li><i class="fas fa-check-circle"></i> Basic Content Management</li>
+                        <li><i class="fas fa-check-circle"></i> Standard Security</li>
+                        <li><i class="fas fa-check-circle"></i> 1 Month Support</li>
+                    </ul>
+                    <button class="choose-button bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md">
+                        Choose Basic Plan
+                    </button>
+                </div>
+
+                <!-- Standard Card -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 flex flex-col transform hover:scale-105 transition-transform duration-300 border-t-4 border-teal-500">
+                    <h3 class="text-3xl font-bold text-teal-400 mb-4">Standard</h3>
+                    <p class="text-gray-400 mb-6">Scale up with more pages and essential e-commerce capabilities.</p>
+                    <div class="flex items-baseline mb-8">
+                        <span class="price-currency">₹</span>
+                        <span class="price-tag text-white">45,000</span>
+                        <span class="text-gray-400 ml-2">/ one-time</span>
+                    </div>
+                    <ul class="feature-list text-gray-300 flex-grow mb-8">
+                        <li><i class="fas fa-check-circle"></i> Up to 10 Pages</li>
+                        <li><i class="fas fa-check-circle"></i> All Basic Features</li>
+                        <li><i class="fas fa-check-circle"></i> Basic E-commerce Integration</li>
+                        <li><i class="fas fa-check-circle"></i> User Authentication</li>
+                        <li><i class="fas fa-check-circle"></i> 2 Major Revisions</li>
+                        <li><i class="fas fa-check-circle"></i> 3 Months Support</li>
+                    </ul>
+                    <button class="choose-button bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md">
+                        Choose Standard Plan
+                    </button>
+                </div>
+
+                <!-- Pro Card -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 flex flex-col transform hover:scale-105 transition-transform duration-300 border-t-4 border-blue-500">
+                    <h3 class="text-3xl font-bold text-blue-400 mb-4">Pro</h3>
+                    <p class="text-gray-400 mb-6">Comprehensive solution with advanced features and ongoing support.</p>
+                    <div class="flex items-baseline mb-8">
+                        <span class="price-currency">₹</span>
+                        <span class="price-tag text-white">80,000</span>
+                        <span class="text-gray-400 ml-2">/ one-time</span>
+                    </div>
+                    <ul class="feature-list text-gray-300 flex-grow mb-8">
+                        <li><i class="fas fa-check-circle"></i> Unlimited Pages</li>
+                        <li><i class="fas fa-check-circle"></i> All Standard Features</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced E-commerce</li>
+                        <li><i class="fas fa-check-circle"></i> Custom Feature Development</li>
+                        <li><i class="fas fa-check-circle"></i> Enhanced Security</li>
+                        <li><i class="fas fa-check-circle"></i> 6 Months Priority Support</li>
+                    </ul>
+                    <button class="choose-button bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md">
+                        Choose Pro Plan
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section: ReactJS Website -->
+        <section id="reactjs-website" class="mb-16">
+            <h2 class="text-4xl sm:text-5xl font-bold text-center text-white mb-12">
+                <span class="text-cyan-400">ReactJS</span> Website Development
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Card -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 flex flex-col transform hover:scale-105 transition-transform duration-300 border-t-4 border-cyan-500">
+                    <h3 class="text-3xl font-bold text-cyan-400 mb-4">Basic</h3>
+                    <p class="text-gray-400 mb-6">Kickstart your interactive web application with React.</p>
+                    <div class="flex items-baseline mb-8">
+                        <span class="price-currency">₹</span>
+                        <span class="price-tag text-white">35,000</span>
+                        <span class="text-gray-400 ml-2">/ one-time</span>
+                    </div>
+                    <ul class="feature-list text-gray-300 flex-grow mb-8">
+                        <li><i class="fas fa-check-circle"></i> Single Page Application (SPA)</li>
+                        <li><i class="fas fa-check-circle"></i> Component-Based Architecture</li>
+                        <li><i class="fas fa-check-circle"></i> Responsive UI</li>
+                        <li><i class="fas fa-check-circle"></i> Basic State Management</li>
+                    </ul>
+                    <button class="choose-button bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md">
+                        Choose Basic Plan
+                    </button>
+                </div>
+
+                <!-- Standard Card -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 flex flex-col transform hover:scale-105 transition-transform duration-300 border-t-4 border-orange-500">
+                    <h3 class="text-3xl font-bold text-orange-400 mb-4">Standard</h3>
+                    <p class="text-gray-400 mb-6">Build a dynamic React app with routing and API integration.</p>
+                    <div class="flex items-baseline mb-8">
+                        <span class="price-currency">₹</span>
+                        <span class="price-tag text-white">60,000</span>
+                        <span class="text-gray-400 ml-2">/ one-time</span>
+                    </div>
+                    <ul class="feature-list text-gray-300 flex-grow mb-8">
+                        <li><i class="fas fa-check-circle"></i> All Basic Features</li>
+                        <li><i class="fas fa-check-circle"></i> Multi-Page Routing</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced State Management</li>
+                        <li><i class="fas fa-check-circle"></i> RESTful API Integration</li>
+                        <li><i class="fas fa-check-circle"></i> 2 Major Revisions</li>
+                    </ul>
+                    <button class="choose-button bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md">
+                        Choose Standard Plan
+                    </button>
+                </div>
+
+                <!-- Pro Card -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 flex flex-col transform hover:scale-105 transition-transform duration-300 border-t-4 border-red-500">
+                    <h3 class="text-3xl font-bold text-red-400 mb-4">Pro</h3>
+                    <p class="text-gray-400 mb-6">Deliver a high-performance, feature-rich React application.</p>
+                    <div class="flex items-baseline mb-8">
+                        <span class="price-currency">₹</span>
+                        <span class="price-tag text-white">1,00,000</span>
+                        <span class="text-gray-400 ml-2">/ one-time</span>
+                    </div>
+                    <ul class="feature-list text-gray-300 flex-grow mb-8">
+                        <li><i class="fas fa-check-circle"></i> All Standard Features</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time Features (e.g., WebSockets)</li>
+                        <li><i class="fas fa-check-circle"></i> Performance Optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Custom Backend Integration</li>
+                        <li><i class="fas fa-check-circle"></i> Ongoing Maintenance & Support</li>
+                    </ul>
+                    <button class="choose-button bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md">
+                        Choose Pro Plan
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-gray-500 mt-20 pb-8">
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
